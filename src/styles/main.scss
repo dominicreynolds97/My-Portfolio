@@ -1,0 +1,179 @@
+$bg-1: #00b07e;
+$bg-2: rgba(35, 84, 181);
+$card-bg: rgb(59, 125, 255);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.hero {
+  height: 100vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  .half {
+    flex: 1;
+    &:first-of-type {
+      border: 1px dotted black;
+    }
+    &:last-of-type {
+      border: 1px dotted white;
+      background-color: black;
+      color: white;
+      li {
+        text-align: left;
+      }
+      h4 {
+        text-align: left;
+        padding-left: 20px;
+      }
+      .skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .svg {
+          width: 100px;
+          margin: 20px;
+        }
+        .white {
+          background-color: white;
+        }
+      }
+    }
+    p {
+      color: grey;
+    }
+  }
+}
+
+.projects {
+    .projects-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      .project-card {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 280px;
+        background-color: $card-bg;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        .github {
+          text-decoration: none;
+        }
+        &:hover {
+          cursor: pointer;
+          animation: shake 0.2s normal;
+        }
+        a {
+          padding: 2px;
+          text-decoration: none;
+          color: black;
+          &:hover {
+            background-color: $bg-2;
+            color: white;
+          }
+
+        }
+      }
+    }
+  }
+ .skewed-box {
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px 10px 10px;
+  overflow: hidden;
+  width: 100vw;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: $bg-1;
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skew(45deg);
+    -ms-transform: skew(45deg);
+    transform: skew(45deg);
+    z-index: -1;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .brand {
+    flex-direction: column;
+  }
+  .skewed-box{
+    &:after {
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    transform: skew(20deg);
+  }}
+}
+
+.music {
+  .songs {
+    .song {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      label {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.contact {
+  h2 {
+    text-align: left;
+    margin-left: 20px;
+  }
+  ul {
+    list-style:square;
+    li {
+      text-align: left;
+    }
+  }
+}
+
+@keyframes shake {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}

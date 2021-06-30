@@ -1,16 +1,24 @@
 import React from 'react'
+import Hero from './components/Hero'
+import Brand from './components/Brand'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Music from './components/Music'
 
 function App() {
-  React.useEffect(() => {
-    const getData = async () => {
-      const res = await fetch('/api/endpoint') // * <-- replace with your endpoint
-      const data = await res.json()
-      console.log(data)
-    }
-    getData()
-  })
 
-  return <h1>Hello World</h1>
+  return (
+    <>
+      <Hero/>
+      <Brand/>
+
+      <div className="skewed-box">
+        <Projects/>
+        <Music/>
+        <Contact/>
+      </div>
+    </>
+  )
 }
 
 export default App
