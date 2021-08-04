@@ -109,34 +109,40 @@ export const skills = [
   }
 ]
 
+import project1 from '../images/project1.png'
+import project2 from '../images/project2.png'
+import project3 from '../images/project3.png'
+import project4 from '../images/project4.png'
+
 export const projects = [
   {
     name: 'Heavy Metal Tetris',
     description: 'My personal take on the classic grid game Tetris. Made using HTML, CSS and Vanilla JavaScript, this was a great learning project for me',
     gitHub: 'https://github.com/dominicreynolds97/project-1',
     deployedUrl: 'https://dominicreynolds97.github.io/project-1/',
-    screenshot: '',
+    screenshot: project1,
   },
   {
     name: 'Weather World Map',
-    description: 'A 48 hour pair project, in this time we built a React.js app that shows the weather wherever you click on the world map',
+    description: 'A 48 hour pair project, in this time we built a React.js app that shows the weather wherever you click on the world map. Built by utilising two free web APIs',
     gitHub: 'https://github.com/dominicreynolds97/sei-project-reactathon',
     deployedUrl: 'https://ga-project-2-dreynolds.netlify.app/',
-    screenshot: '',
+    screenshot: project2,
   },
   {
     name: 'R8 MY PL8 M8',
-    description: 'A full stack group project using node.js, mongoDb and React.js. For posting and rating meals ',
+    description: 'A full stack group project using node.js, mongoDb and React.js. For posting and rating meals. I personally built a lot of the front end and was heavily involved with the back end',
     gitHubClient: 'https://github.com/dominicreynolds97/project-3-client',
     gitHubServer: 'https://github.com/dominicreynolds97/project-3-server',
     deployedUrl: 'https://ratemyplatemate.netlify.app/',
-    screenshot: '',
+    screenshot: project3,
   },
   {
     name: 'Local Music NI',
     description: 'A place for all of the local music in Northern Ireland, where gigs can be shared and great bands can be discovered. A full stack solo project using React.js and Django.py',
     gitHubClient: 'https://github.com/dominicreynolds97/project-4-client',
     gitHubServer: 'https://github.com/dominicreynolds97/project-4-server',
-    screenshot: '',
+    deployedUrl: 'https://localmusicni.netlify.app/',
+    screenshot: project4,
   }
 ]
