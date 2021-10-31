@@ -155,7 +155,7 @@ body {
  .skewed-box {
   position: relative;
   display: inline-block;
-  padding: 10px 40px 10px 10px;
+  // padding: 10px 40px 10px 10px;
   overflow: hidden;
   width: 100vw;
   &:after {
@@ -169,9 +169,9 @@ body {
     -webkit-transform-origin: 100% 0;
     -ms-transform-origin: 100% 0;
     transform-origin: 100% 0;
-    -webkit-transform: skew(45deg);
-    -ms-transform: skew(45deg);
-    transform: skew(45deg);
+    -webkit-transform: skew(40deg);
+    -ms-transform: skew(40deg);
+    transform: skew(40deg);
     z-index: -1;
   }
 }
@@ -186,9 +186,9 @@ body {
     -webkit-transform-origin: 100% 0;
     -ms-transform-origin: 100% 0;
     transform-origin: 100% 0;
-    -webkit-transform: skew(20deg);
-    -ms-transform: skew(20deg);
-    transform: skew(20deg);
+    -webkit-transform: skew(15deg);
+    -ms-transform: skew(15deg);
+    transform: skew(15deg);
   }}
 }
 

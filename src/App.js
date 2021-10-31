@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Brand from './components/Brand'
 import Projects from './components/Projects'
@@ -11,7 +10,6 @@ function App() {
 
   return (
     <>
-      <Nav/>
       <Element name="home"><Hero/></Element>
       <Element name="brand"><Brand/></Element>
 
